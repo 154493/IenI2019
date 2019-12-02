@@ -14,7 +14,8 @@ function draw() {
   text("xJOS: " + round(xJOS) + " (mouseX:" + round(mouseX) + ")",10,20);
   text("yJOS: " + round(yJOS) + " (mouseY:" + round(mouseY) + ")",260,20);
   
-  xJOS = constrain(mouseX,100,450);
+  xJOS = constrain(mouseX,250,600);
+  yJOS = constrain(mouseY,250,450);
   
   scale(1);
   translate(xJOS,225);
