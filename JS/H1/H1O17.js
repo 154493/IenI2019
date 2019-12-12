@@ -22,14 +22,6 @@ function draw() {
   tekenBoom(900);
 }
 
-function tekenZOn(x,s) {
-    push();
-    fill('red');
-    scale(s);
-    ellipse(x,200,300,300);
-    pop();
-}
-
 function tekenHuis() {
   push();
   strokeWeight(4);
@@ -51,4 +43,12 @@ function tekenBoom(x) {
   fill('olive');
   ellipse(x + 20,130,100,150);
   pop();
+}
+
+function tekenZOn(x,s) {
+    push()
+    fill('red');
+    scale(s);
+    ellipse(x,200,300,300);
+    pop();
 }
