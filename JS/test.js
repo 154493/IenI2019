@@ -1,3 +1,5 @@
+var diamater = 50
+
 function setup() {
   canvas = createCanvas(450,450);
   background('silver');
@@ -6,8 +8,13 @@ function setup() {
 }
 
 function draw() {
-  fill('darkred');
-  ellipse(225,225,300);
-  fill('darkblue');
-  rect(125,125,200,200);
+   noStroke();
+   fill('red');
+   ellipse(75,225,diamater);
+}
+function sfs() {
+   for (var n = 1;n <=5;n++) {
+   draw(n);
+   translate(75,225)    
+   }
 }
